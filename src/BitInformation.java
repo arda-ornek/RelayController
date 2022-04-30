@@ -67,6 +67,9 @@ public class BitInformation {
 	private float UpsState4020;
 	private float UpsState4030;
 	
+	public BitInformation() {
+		super();
+	}
 	public int getBoardCurrentID() {
 		byte [] bytes = { 0x00,0x04,0x13,0x00 };
 		BoardCurrentID = ByteBuffer.wrap(bytes).getInt();

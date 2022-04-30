@@ -9,7 +9,12 @@ public class ResponseModel {
 	private String MacResp;
 	private String MajorMinorPatch;
 	
-	private BitInformation info;
+	//private BitInformation info;
+	BitInformation info = new BitInformation();
+	
+	public ResponseModel() {
+		super();
+	}
 
 	public BitInformation getInfo() {
 		return info;
